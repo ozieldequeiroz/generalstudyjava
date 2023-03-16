@@ -1,4 +1,4 @@
-package javateste;
+package javateste.listas;
 
 import java.util.ArrayList;
 import java.util.List;

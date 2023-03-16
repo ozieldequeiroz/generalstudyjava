@@ -1,4 +1,4 @@
-package javateste;
+package javateste.listas;
 
 public class Cliente {
 	
