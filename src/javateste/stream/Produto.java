@@ -4,9 +4,10 @@ import java.math.BigDecimal;
 
 public class Produto {
 	
-	public enum Status{
+	public enum Status {
 		ATIVO,INATIVO
 	}
+	
 	private String nome;
 	private Status status;
 	private BigDecimal preco;
