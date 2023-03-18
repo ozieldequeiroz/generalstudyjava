@@ -1,16 +1,13 @@
-package javateste.stream;
+package javateste.main;
 
 import java.math.BigDecimal;
 
 public class Produto {
 	
-	public enum Status {
-		ATIVO,INATIVO
-	}
-	
 	private String nome;
 	private Status status;
 	private BigDecimal preco;
+	
 	
 	public Produto(String nome, Status status, BigDecimal preco) {
 		super();
