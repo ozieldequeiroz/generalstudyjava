@@ -17,7 +17,7 @@ public class TesteStream {
 		produtos.add(new Produto("Pamonha", Status.ATIVO, new BigDecimal(6.9)));
 		produtos.add(new Produto("Cupim", Status.ATIVO, new BigDecimal(19.9)));
 		
-		produtos.stream().filter(p->p.getNome().startsWith("A")).forEach(Produto::inativar); ;
+		produtos.stream().filter(p->p.getNome().startsWith("P")).forEach(Produto::inativar); ;
 		
 	}
 	
