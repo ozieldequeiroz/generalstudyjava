@@ -37,5 +37,8 @@ public class Produto {
 		System.out.println("Inativando: "+getNome());
 		this.status=status.INATIVO;
 	}
+	public Categoria getCategoria() {
+		return this.categoria;
+	}
 
 }

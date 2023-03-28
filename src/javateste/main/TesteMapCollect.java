@@ -2,6 +2,7 @@ package javateste.main;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class TesteMapCollect {
@@ -21,6 +22,18 @@ public class TesteMapCollect {
 		
 		List<Categoria> categorias = new ArrayList<>();
 		
+		for (Produto produto: produtos) {
+			if (produto.getStatus().equals(Status.ATIVO)) {
+				Categoria categoria = produto.getCategoria();
+				
+				if (!categorias.contains(categorias)) {
+					categorias.add(categoria);
+				}
+				
+			}
+			
+		}
+		System.out.println(categorias);
 		produtos.stream().allMatch(p->p.getStatus().equals(Status.ATIVO));
 		
 	}
