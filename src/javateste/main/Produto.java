@@ -7,10 +7,16 @@ public class Produto {
 	private String nome;
 	private Status status;
 	private BigDecimal preco;
-	
+	private Categoria categoria;
 	
 	public Produto(String nome, Status status, BigDecimal preco) {
 		super();
+		this.nome = nome;
+		this.status = status;
+		this.preco = preco;
+	}
+	public Produto(String nome, Status status, BigDecimal preco,Categoria categoria) {
+		this.categoria=categoria;
 		this.nome = nome;
 		this.status = status;
 		this.preco = preco;
