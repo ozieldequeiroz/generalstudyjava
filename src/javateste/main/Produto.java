@@ -40,5 +40,11 @@ public class Produto {
 	public Categoria getCategoria() {
 		return this.categoria;
 	}
+	@Override
+	public String toString() {
+		return "Produto [nome=" + nome + ", status=" + status + ", preco=" + preco + ", categoria=" + categoria + "]";
+	}
+	
+	
 
 }
