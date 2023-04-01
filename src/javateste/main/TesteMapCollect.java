@@ -40,8 +40,13 @@ public class TesteMapCollect {
 		
 		BigDecimal total  = BigDecimal.ZERO;
 		
+		
 		total = produtos.stream()
 				.filter(p->p.getStatus().equals(Status.ATIVO))
+				.map(Produto::getPreco)
+				.reduce(BigDecimal.ZERO,BigDecimal::add);
+		
+		System.out.println(total);
 				
 		
 	}
